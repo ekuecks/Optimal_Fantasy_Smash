@@ -39,7 +39,7 @@ def main():
         line = line.strip()
         vals = line.split(' ')
         # vals = [place, name, salary, value]
-        players.append((vals[1], int(vals[2]), int(vals[3])))
+        players.append((' '.join(vals[1:-2]), int(vals[-2]), int(vals[-1])))
     num = len(players)
     # build up the dynamic programming matrix
     for i in range(num + 1):

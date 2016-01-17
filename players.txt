@@ -22,11 +22,11 @@
 17 MacD 150 270
 17 Hugs 130 270
 17 CDK 70 270
-17 Silent_Wolf 150 270
+17 Silent Wolf 150 270
 25 Fiction 90 220
 25 silentspectre 50 220
 25 Abate 110 220
-25 Eddy_Mexico 110 220
+25 Eddy Mexico 110 220
 25 MikeHaze 90 220
 25 Lord 90 220
 25 Laudandus 70 220
@@ -36,7 +36,7 @@
 33 Kjh 90 170
 33 Gahtzu 90 170
 33 Zhu 110 170
-33 Swedish_Delight 110 170
+33 Swedish Delight 110 170
 33 Cactuar 110 170
 33 Kalamazhu 70 170
 33 G$ 50 170
@@ -56,8 +56,8 @@
 49 ROFL 60 120
 49 Kira 70 120
 49 lovage 60 120
-49 Captain_Smuckers 60 120
-49 Captain_Faceroll 50 120
+49 Captain Smuckers 60 120
+49 Captain Faceroll 50 120
 49 Reno 70 120
 49 Ralph 70 120
 49 Jflex 40 120
@@ -72,10 +72,10 @@
 65 Mooninite 30 60
 65 Cyrain 50 60
 65 OkamiBW 60 60
-65 A_Rookie 40 60
+65 A Rookie 40 60
 65 Mafia 60 60
 65 NMW 50 60
-65 Prince_Abu 90 60
+65 Prince Abu 90 60
 65 4% 60 60
 65 FrootLoop 90 60
 65 Twin 60 60
@@ -83,17 +83,17 @@
 65 Moose 60 60
 65 icer 40 60
 65 J666 40 60
-65 DJ_Nintendo 90 60
+65 DJ Nintendo 90 60
 65 Sol 20 60
 65 homemadewaffles 70 60
 65 Medz 60 60
 65 Azusa 60 60
 65 LuigiKid 50 60
-65 The_Moon 110 60
+65 The Moon 110 60
 65 D..P 60 60
 65 SUNG475 70 60
 65 Phil 60 60
-65 Ryan_Ford 90 60
+65 Ryan Ford 90 60
 65 vortex 20 60
 97 Ginger 40 30
 97 toastbread 20 30
@@ -107,23 +107,23 @@
 97 Coffeeblack 40 30
 97 Iceman 30 30
 97 ycz6 40 30
-97 NY_Joey 40 30
+97 NY Joey 40 30
 97 Drunksloth 40 30
 97 uuaa 40 30
 97 SacaSuMoto 40 30
 97 Porkchops 60 30
 97 hamyojo 20 30
-97 Trichael_Man 20 30
+97 Trichael Man 20 30
 97 MoJoe 20 30
 97 Wobbles 110 30
 97 Yakal 40 30
 97 Swiftbass 60 30
 97 Ky 40 30
 97 Tafokints 70 30
-97 Azen_Zagenite 50 30
+97 Azen Zagenite 50 30
 97 Tirno 50 30
 97 CIZ 40 30
 97 L 50 30
 97 Rula 40 30
 97 Tai 60 30
-97 Bizzarro_Flame 50 30
+97 Bizzarro Flame 50 30
