@@ -13,7 +13,7 @@
   place name salary score
   ...
   ```
-  See the sample file for Genesis 3 (top 8 currently projected)
+  See the sample file for Genesis 3
   
 3. run `python optimal.py` to see the optimal lineup for that tournament
   
