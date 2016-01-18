@@ -1,4 +1,4 @@
-import copy
+import sys
 # dp array nxWx13
 dp = []
 
@@ -12,7 +12,7 @@ def optimal(players, players_left, cap):
     # or no more room on the roster
     # or we have already solved this case
     if dp[num_players][players_left][cap] != None:
-        return copy.deepcopy(dp[num_players][players_left][cap])
+        return dp[num_players][players_left][cap]
     # either the first player in the player array is in the optimal solution or isn't
     not_in = optimal(players[1:], players_left, cap)
     # is there enough slary cap for this player
@@ -31,7 +31,10 @@ def main():
     ROSTER_SIZE = 12
     # players.txt holds the file with all players and their value and salary
     # as well as the salary cap
-    f = open('players.txt', 'r')
+    filename = 'players.txt'
+    if len(sys.argv) > 1:
+        filename = sys.argv[1]
+    f = open(filename, 'r')
     cap = int(f.readline().strip())
     # build up the players array
     players = []
