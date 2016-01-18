@@ -127,3 +127,15 @@
 97 Rula 40 30
 97 Tai 60 30
 97 Bizzarro Flame 50 30
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0

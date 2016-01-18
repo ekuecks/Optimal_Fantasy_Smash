@@ -63,3 +63,15 @@
 49 Jtails 1500 30
 49 J! 1500 30
 49 False 170 30
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
