@@ -1,10 +1,10 @@
 1400
 1 Armada 250 650
-2 Hungrybox 230 600
-3 PPMD 200 550
-4 Mango 210 510
+2 Mango 210 600
+3 Hungrybox 230 550
+4 Axe 170 510
 5 SFAT 150 470
-5 Axe 170 470
+5 PPMD 200 470
 7 Nintendude 130 390
 7 Ice 130 390
 9 Mew2King 210 350
@@ -39,7 +39,7 @@
 33 Swedish Delight 110 170
 33 Cactuar 110 170
 33 Kalamazhu 70 170
-33 G$ 50 170
+33 G$ 10 170
 33 Milkman 50 170
 33 Santiago 90 170
 33 Redd 70 170
@@ -127,3 +127,15 @@
 97 Rula 40 30
 97 Tai 60 30
 97 Bizzarro Flame 50 30
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0

@@ -39,7 +39,7 @@
 33 Swedish Delight 110 170
 33 Cactuar 110 170
 33 Kalamazhu 70 170
-33 G$ 50 170
+33 G$ 10 170
 33 Milkman 50 170
 33 Santiago 90 170
 33 Redd 70 170
