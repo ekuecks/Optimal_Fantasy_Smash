@@ -1,0 +1,109 @@
+1400
+1 Hungrybox 210 550
+2 Mango 200 520
+3 Hax 170 490
+4 Swedish Delight 130 460
+5 Plup 190 430
+5 Laudandus 90 430
+7 Colbol 150 390
+7 S2J 170 390
+9 Professor Pro 130 350
+9 InfiniteNumbers 30 350
+9 Nintendude 150 350
+9 Wizzrobe 150 350
+13 aMSa 140 310
+13 Gahtzu 110 310
+13 Gravy 90 310
+13 Duck 150 310
+17 SFAT 180 270
+17 PPU 180 270
+17 DJ Nintendo 120 270
+17 Slox 90 270
+17 n0ne 110 270
+17 Bladewise 130 270
+17 MikeHaze 130 270
+17 ChuDat 130 270
+25 Captain Smuckers 70 220
+25 Druggedfox 170 220
+25 Crush 80 220
+25 SmashGOD 70 220
+25 Chillindude 110 220
+25 lloD 90 220
+25 Zhu 130 220
+25 Axe 190 220
+33 Prince Abu 110 170
+33 Ronzell 10 170
+33 Zgetto 90 170
+33 Mafia 110 170
+33 Amsah 110 170
+33 Redd 90 170
+33 Westballz 190 170
+33 Bizarro Flame 70 170
+33 Hugs 150 170
+33 Doll 30 170
+33 KJH 110 170
+33 Kira 90 170
+33 Zanguzen 90 170
+33 Rula 70 170
+33 MacD 170 170
+33 4% 70 170
+49 Husband 30 120
+49 Frootloop 110 120
+49 The Moon 130 120
+49 Zain 30 120
+49 Velocity 20 120
+49 Ryan Ford 110 120
+49 Milkman 90 120
+49 Qerb 90 120
+49 Sharkz 30 120
+49 DoH 70 120
+49 tm 20 120
+49 Drephen 70 120
+49 Aglet 30 120
+49 Alex19 90 120
+49 Equal 80 120
+49 JFlex 80 120
+65 Swiftbass 90 60
+65 T. Webb 30 60
+65 Plank 70 60
+65 Wenbobular 30 60
+65 SG 30 60
+65 travis 20 60
+65 Quang 10 60
+65 Lawn Chair 20 60
+65 MattDotZeb 70 60
+65 otg 70 60
+65 Bones 30 60
+65 Rold Gold 10 60
+65 XIF 70 60
+65 Lock 30 60
+65 hat 30 60
+65 dudutsai 40 60
+65 StriCNYN3 70 60
+65 TRK 30 60
+65 BMC 20 60
+65 Tesla 10 60
+65 Cyrain 70 60
+65 Juggleguy 30 60
+65 Green Ranger 20 60
+65 Hazygoose 10 60
+65 homemadewaffles 90 60
+65 dizzkidboogie 100 60
+65 Reeve 40 60
+65 BigVegetaBluntz 30 60
+65 Minty 30 60
+65 Frycook 30 60
+65 Peanutphobia 30 60
+65 bolt 10 60
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
+9999 $10 player 10 0
