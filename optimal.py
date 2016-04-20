@@ -20,13 +20,15 @@ def optimal(players, players_left, cap):
     not_in = (-1, [])
     if excludable:
         not_in = optimal(players[1:], players_left, cap)
+    # Was there actually a solution without this player (or is the cap to small for the reamining players)
     if not_in[0] < 0:
         excludable = False
-    # is there enough slary cap for this player
+    # is there enough salary cap for this player
     signable = cap - players[0][1] >= 0
     is_in = (-1, [])
     if signable:
         is_in = optimal(players[1:], players_left - 1, cap - players[0][1])
+    # Signing this player made the solution impossible
     if is_in[0] < 0:
         signable = False
     # compare the values and return larger
@@ -40,7 +42,7 @@ def optimal(players, players_left, cap):
     return dp[num_players][players_left][cap]
 
 def main():
-    ROSTER_SIZE = 12
+    ROSTER_SIZE = 8
     # players.txt holds the file with all players and their value and salary
     # as well as the salary cap
     filename = 'players.txt'
@@ -68,7 +70,7 @@ def main():
         for k in range(cap + 1):
             dp[0][j][k] = (0, [])
     for i in range(1, ROSTER_SIZE):
-        for j in range(1, i):
+        for j in range(i+1, ROSTER_SIZE):
             for k in range(cap + 1):
                 dp[i][j][k] = (-1, [])
     for i in range(num + 1):
