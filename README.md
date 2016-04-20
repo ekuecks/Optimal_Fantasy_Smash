@@ -8,7 +8,7 @@
 
 2. Edit the players.txt file with the results of the tournament with the format
   ```
-  salary_cap
+  roster_spots salary_cap
   place name salary score
   place name salary score
   ...

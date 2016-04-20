@@ -42,14 +42,15 @@ def optimal(players, players_left, cap):
     return dp[num_players][players_left][cap]
 
 def main():
-    ROSTER_SIZE = 8
     # players.txt holds the file with all players and their value and salary
     # as well as the salary cap
     filename = 'players.txt'
     if len(sys.argv) > 1:
         filename = sys.argv[1]
     f = open(filename, 'r')
-    cap = int(f.readline().strip())
+    line = f.readline().strip().split(' ')
+    roster_size = int(line[0])
+    cap = int(line[1])
     # build up the players array
     players = []
     for line in f:
@@ -59,24 +60,24 @@ def main():
         players.append((' '.join(vals[1:-2]), int(vals[-2]), int(vals[-1])))
     num = len(players)
     # build up the dynamic programming matrix
+    # dp[players left to choose from][roster spots left][cap room left]
     for i in range(num + 1):
         dp.append([])
-        for j in range(ROSTER_SIZE + 1):
+        for j in range(roster_size + 1):
             dp[i].append([])
             for k in range(cap + 1):
                 dp[i][j].append(None)
     # base cases initialization
-    for j in range(ROSTER_SIZE + 1):
-        for k in range(cap + 1):
-            dp[0][j][k] = (0, [])
-    for i in range(1, ROSTER_SIZE):
-        for j in range(i+1, ROSTER_SIZE):
-            for k in range(cap + 1):
-                dp[i][j][k] = (-1, [])
+    # No spots on roster -> 0 score and empty roster
     for i in range(num + 1):
         for k in range(cap + 1):
             dp[i][0][k] = (0, [])
-    opt = optimal(players, ROSTER_SIZE, cap)
+    # Fewer players left to choose from than roster spot -> invalid
+    for i in range(roster_size):
+        for j in range(i+1, roster_size + 1):
+            for k in range(cap + 1):
+                dp[i][j][k] = (-1, [])
+    opt = optimal(players, roster_size, cap)
     for player in opt[1]:
         print(player[0] + " " + "$" + str(player[1]) + ": " + str(player[2]))
     print("Optimal Score: " + str(opt[0]))
