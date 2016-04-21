@@ -1,0 +1,17 @@
+8 1400
+1 Armada 230 550
+2 Hungrybox 230 500
+3 Mango 220 450
+4 Plup 210 400
+5 Mew2King 210 350
+5 Westballz 190 350
+7 Wobbles 180 300
+7 Axe 190 300
+9 Shroomed 170 250
+9 SFAT 170 250
+9 Silent Wolf 170 250
+9 Ice 170 250
+13 PewPewU 150 0
+13 Duck 150 0
+13 S2J 150 0
+13 ESAM 140 0
