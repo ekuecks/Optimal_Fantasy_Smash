@@ -1,86 +1,42 @@
+import argparse
+import os.path
 import sys
-# dp array nxWx13
-dp = []
 
-# players -> array of all players as a tuple of (name, salary, value)
-# players_left -> roster space left
-# cap -> cap room left
-def optimal(players, players_left, cap):
-    num_players = len(players)
-    # base cases
-    # not enough players left to fill out the roster
-    # or no more players left to look at
-    # or no more room on the roster
-    # or we have already solved this case
-    if dp[num_players][players_left][cap] != None:
-        return dp[num_players][players_left][cap]
-    # either the first player in the player array is in the optimal solution or isn't
-    # if we don't sign this player, will there be enough players left to fill the roster
-    excludable = num_players > players_left
-    not_in = (-1, [])
-    if excludable:
-        not_in = optimal(players[1:], players_left, cap)
-    # Was there actually a solution without this player (or is the cap to small for the reamining players)
-    if not_in[0] < 0:
-        excludable = False
-    # is there enough salary cap for this player
-    signable = cap - players[0][1] >= 0
-    is_in = (-1, [])
-    if signable:
-        is_in = optimal(players[1:], players_left - 1, cap - players[0][1])
-    # Signing this player made the solution impossible
-    if is_in[0] < 0:
-        signable = False
-    # compare the values and return larger
-    # cannot make a 12-player team with these picks
-    if not excludable and not signable:
-        dp[num_players][players_left][cap] = (-1, [])
-    elif excludable and (not signable or not_in[0] > is_in[0] + players[0][2]):
-        dp[num_players][players_left][cap] = not_in
-    else:
-        dp[num_players][players_left][cap] = (is_in[0] + players[0][2], is_in[1] + [players[0]])
-    return dp[num_players][players_left][cap]
+from tabulate import tabulate
 
-def main():
+from optimizer import Optimizer, Result
+
+
+def main(args: argparse.Namespace) -> int:
     # players.txt holds the file with all players and their value and salary
     # as well as the salary cap
-    filename = 'players.txt'
-    if len(sys.argv) > 1:
-        filename = sys.argv[1]
-    f = open(filename, 'r')
-    line = f.readline().strip().split(' ')
-    roster_size = int(line[0])
-    cap = int(line[1])
-    # build up the players array
-    players = []
-    for line in f:
-        line = line.strip()
-        vals = line.split(' ')
-        # vals = [place, name, salary, value]
-        players.append((' '.join(vals[1:-2]), int(vals[-2]), int(vals[-1])))
-    num = len(players)
-    # build up the dynamic programming matrix
-    # dp[players left to choose from][roster spots left][cap room left]
-    for i in range(num + 1):
-        dp.append([])
-        for j in range(roster_size + 1):
-            dp[i].append([])
-            for k in range(cap + 1):
-                dp[i][j].append(None)
-    # base cases initialization
-    # No spots on roster -> 0 score and empty roster
-    for i in range(num + 1):
-        for k in range(cap + 1):
-            dp[i][0][k] = (0, [])
-    # Fewer players left to choose from than roster spot -> invalid
-    for i in range(roster_size):
-        for j in range(i+1, roster_size + 1):
-            for k in range(cap + 1):
-                dp[i][j][k] = (-1, [])
-    opt = optimal(players, roster_size, cap)
-    for player in opt[1]:
-        print(player[0] + " " + "$" + str(player[1]) + ": " + str(player[2]))
-    print("Optimal Score: " + str(opt[0]))
+    if args.tournament:
+        filename = None
+    else:
+        filename = os.path.expanduser(os.path.expandvars(args.filename))
+    optimizer: Optimizer = Optimizer(filename=filename, tournament=args.tournament)
+    opt: Result = optimizer.optimize()
+    if not opt.players:
+        raise ValueError("Failed to find any possible lineup for the tournament")
+    headers = ["name", "salary", "value"]
+    print(tabulate([(p.name, p.salary, p.value) for p in opt.players], headers))
+    print("Optimal Score: {}".format(opt.value))
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
+    )
+    input_data = parser.add_mutually_exclusive_group()
+    input_data.add_argument(
+        "--filename", help="Use the data in the unput file.", default="data/players.txt"
+    )
+    input_data.add_argument(
+        "--tournament",
+        # TODO: Unsuppress this argument when this feature is supported
+        # help="Fetch data from smash.gg using the name of the tournament.",
+        help=argparse.SUPPRESS,
+    )
+
+    sys.exit(main(parser.parse_args()))
